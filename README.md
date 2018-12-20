@@ -16,7 +16,8 @@
 ## Getting Started
 1. Clone repository `git clone git@github.com:catalyticlabs/pushbot-autotest.git`
 2. Download dependencies `yarn` or `yarn install`
-3. Build packages `yarn build`
+3. Build packages `lerna run build`
+4. Lint `lerna run lint`
 
 ## Running Tests Locally
 > You can run locally assuming you have the device/browser installed
