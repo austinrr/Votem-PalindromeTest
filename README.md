@@ -8,7 +8,7 @@
 1. Clone repository `git clone git@github.com:austinrr/Votem-PalindromeTest.git`
 2. Download dependencies `yarn` or `yarn install`
 3. Build packages `lerna run build`
-4. Made changes? `lerns run lint`
+4. Made changes? `lernas run lint`
 
 ## Running Tests Locally
 > for now don't change the host because login information is hard-coded
