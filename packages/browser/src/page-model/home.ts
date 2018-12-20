@@ -4,7 +4,7 @@ import { PalindromeTestGlobals as pg } from '@votem-palindrometest/common';
 
 export default class HomePage extends PageDefaults implements Page {
     public morePalindromesBtn: Selector;
-    public path: string = '/home';
+    public path: string = '/index.html';
 
     constructor () {
         super ();
