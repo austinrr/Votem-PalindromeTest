@@ -1,0 +1,21 @@
+{
+  "author": "Austin Rhodes",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "lerna": "^3.4.3",
+    "rimraf": "^2.6.2"
+  },
+  "scripts": {
+    "build": "lerna run build",
+    "build:watch": "lerna run build:watch",
+    "clean": "lerna run clean",
+    "clean:full": "rimraf ./node_modules && lerna run clean:full",
+    "lint": "lerna run lint"
+  }
+}
