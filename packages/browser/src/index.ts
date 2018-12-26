@@ -79,7 +79,7 @@ function runTestCafe () {
             return runner
                 .browsers(browsers)
                 .src(`**/${argv.test}.js`)
-                .run({speed: 0.5});
+                .run({speed: 0.75});
         })
         .then((failed: any) => {
             console.warn('Tests failed: ' + failed);
