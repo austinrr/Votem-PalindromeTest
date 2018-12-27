@@ -66,6 +66,7 @@ function parseArgs () {
     runTestCafe();
 }
 
+// test
 function runTestCafe () {
     // tslint:disable-next-line:prefer-const
     let testcafe: any = null;
