@@ -88,8 +88,9 @@ function runTestCafe () {
         .catch((error: any) => {
             if (error.message !== "Cannot read property 'close' of null") {
                 console.error(error);
+                process.exit(1);
             }
-            process.exit(1);
+            process.exit(0);
         });
 }
 
