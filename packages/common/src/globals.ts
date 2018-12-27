@@ -44,17 +44,9 @@ export namespace PalindromeTestGlobals {
         const outDirPath = path.join(__dirname, '../../../', 'out');
         const formattedStr = `${new Date()}\t--\tcount: ${palindromesCount}\n${palindromesList}\n\n`;
 
-        fs.exists(outDirPath, (exists) => {
-            if (!exists) {
-                fs.mkdir(outDirPath, (err: Error) => {
-                    if (err) throw err;
-                });
-            }
+        if (!fs.existsSync(outDirPath)) fs.mkdirSync(outDirPath);
 
-            fs.appendFile(path.join(outDirPath, 'palindromes.txt'), formattedStr, 'utf8', (err) => {
-                if (err) throw err;
-                console.log(`Appended palindromes text to file ${path.join(outDirPath, 'palindromes.txt')}.`);
-            });
-        });
+        fs.appendFileSync(path.join(outDirPath, 'palindromes.txt'), formattedStr, 'utf8');
+        console.log(`Appended palindromes text to file ${path.join(outDirPath, 'palindromes.txt')}.`);
     }
 }
